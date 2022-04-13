@@ -26,6 +26,12 @@ header {
   margin-bottom: 1.5rem;
 }
 
+main {
+  background-color: #bebebe;
+  margin: 0;
+  padding: 0 1rem;
+}
+
 h1 {
   margin: 0;
   grid-area: center;
@@ -95,12 +101,36 @@ section li {
     "bottom";
 }
 
+section li h3 {
+  grid-area: bottom;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(0,0,0,.1);
+}
+
 section {
   padding: 1.5rem 0;
 }
 
-main {
-  background-color: #bebebe;
-  margin: 0;
-  padding: 0 1rem;
+section div {
+  display: flex;
+  grid-row: 1;
+  grid-area: top;
+  flex-direction: row-reverse;
+  justify-self: flex;
+  align-items: center;
+  border-radius: 1em 0 0 1em;
+  background-color: rgba(0,0,0,.1);
+  padding: .5rem;
+}
+
+section div img {
+  width: 1rem;
+  order: 1;
+}
+
+section strong {
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: normal;
 }
