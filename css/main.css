@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
 }
 
@@ -21,7 +21,7 @@ header {
   grid-template-columns: auto 10rem auto;
   grid-template-rows: auto 1.5rem;
   grid-template-areas:
-    "left centre right"
+    "left center right"
     ". center .";
   margin-bottom: 1.5rem;
 }
@@ -35,7 +35,7 @@ main {
 h1 {
   margin: 0;
   grid-area: center;
-  z-index: 1;
+  z-index: 10;
 }
 
 nav {
@@ -46,11 +46,11 @@ nav {
 
 nav ul {
   margin: 0;
-  padding: 0;
   display: flex;
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 nav li {
@@ -60,13 +60,22 @@ nav li {
   padding: .5em .8em;
   margin: 0;
   background-color: #bd027d;
-  border: 2px solid #bd027d;
   border-radius: 6px;
 }
 
 nav a {
   text-decoration: none;
+  color: #cccee2;
+  background-color: #bd027d;
+  border: 2px solid #960062;
+  padding: .5em .8em;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
   color: #fff;
+  background-color: #960062;
 }
 
 img {
@@ -105,7 +114,10 @@ section li h3 {
   grid-area: bottom;
   z-index: 1;
   text-align: center;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0, 0, 0, .1);
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: .5em 0;
+  font-size: 1.25rem;
 }
 
 section {
@@ -114,14 +126,14 @@ section {
 
 section div {
   display: flex;
-  grid-row: 1;
   grid-area: top;
   flex-direction: row-reverse;
-  justify-self: flex;
   align-items: center;
   border-radius: 1em 0 0 1em;
-  background-color: rgba(0,0,0,.1);
-  padding: .5rem;
+  background-color: rgba(0, 0, 0, .1);
+  padding: 0 .5em;
+  justify-self: end;
+  margin-top: .5em;
 }
 
 section div img {
