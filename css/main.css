@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  padding: 0;
+  gap: 1rem;
+  margin: 0;
+}
+
+section li > img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+section li {
+  background-color: #ccc;
+  margin: 1.5rem;
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+}
+
+section {
+  padding: 1.5rem 0;
+}
+
+main {
+  background-color: #bebebe;
+  margin: 0;
+  padding: 0 1rem;
+}
